@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/taniwhaai/kano-showcase/release-manifest.schema.json",
+  "title": "Kano Showcase manifest (showcase.json)",
+  "description": "Binds a viewer build and a world file into one identified showcase. Shipped inside each release bundle.",
+  "type": "object",
+  "required": ["showcase_version", "world_id", "world_file", "s9_version", "spawn"],
+  "additionalProperties": false,
+  "properties": {
+    "showcase_version": {
+      "type": "string",
+      "description": "Semantic version of this showcase release.",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "world_id": {
+      "type": "string",
+      "description": "Authoritative identity: sha256 of the exact distributed world bytes.",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "world_file": {
+      "type": "string",
+      "description": "Filename of the world beside the executable.",
+      "default": "default.s9z"
+    },
+    "s9_version": {
+      "type": "integer",
+      "description": "On-disk .s9 format version the world was baked at.",
+      "minimum": 1
+    },
+    "params_hash": {
+      "type": "string",
+      "description": "Informational, non-reversible identifier of the generation configuration."
+    },
+    "viewer_build": {
+      "type": "string",
+      "description": "Opaque build identifier of the Hikoi binary."
+    },
+    "daemon_build": {
+      "type": "string",
+      "description": "Opaque build identifier of the kano binary."
+    },
+    "spawn": {
+      "type": "object",
+      "description": "Curated start location.",
+      "required": ["lat", "lon"],
+      "additionalProperties": false,
+      "properties": {
+        "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+        "lon": { "type": "number", "minimum": -180, "maximum": 180 }
+      }
+    },
+    "showcase_utsc": {
+      "type": "integer",
+      "description": "Pinned world-clock tick for the showcase (freezes weather, light, and season so every viewer and screenshot agrees).",
+      "default": 0
+    }
+  }
+}
