@@ -2,6 +2,8 @@
 
 **Walk a generated world. Then ask it *why*.**
 
+![Rainforest edge on the showcase world — every tree grown in place from the soil, climate, and light at that spot](docs/media/hero-rainforest.png)
+
 Kano grows whole planets from a single seed — geology, climate, hydrology,
 weather, life — every place coherent enough to explain why it's there. This
 showcase is one such world, plus **Hīkoi**, a first-person viewer that lets
@@ -18,7 +20,10 @@ MCP.
 1. Download the zip for your platform from [Releases](../../releases).
 2. Unzip anywhere. Run `hikoi` (double-click). You're standing on the world.
 3. Walk: **WASD** (+**Shift** to run) · look: **mouse** · interrogate what
-   you're facing: **RMB** · globe travel: **G** · curated places: **1–8**.
+   you're facing: **I** · a tree's generative recipe: **RMB** · globe travel:
+   **G** · curated places: **1–8**.
+
+![The interrogation panel — six tabs answered from the world itself; here Why explains the floodplain's tectonic history](docs/media/interrogate-why.png)
 
 The scene builds as you arrive: the terrain draws first, then the trees fade
 in a second or two later. That's normal — assets stream in the background.

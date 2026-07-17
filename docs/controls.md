@@ -13,7 +13,8 @@
 
 | Input | Action |
 |---|---|
-| **Right mouse button** | free the cursor + open the interrogation panel — six tabs (Here · Why · Weather · Ground · Life · Scene) answered from the world itself; copy the coordinates, the query, or a link |
+| **I** | open the interrogation panel — six tabs (Here · Why · Weather · Ground · Life · Scene) answered from the world itself; copy the coordinates, the query, or a link |
+| **Right mouse button** | inspect the tree you're facing — its species prose and the generative flora DSL that grew it |
 | **Left mouse button** | (cursor free) re-capture look / dismiss the panel |
 | **Esc** | close the panel, then quit |
 
