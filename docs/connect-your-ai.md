@@ -55,24 +55,24 @@ Any client that supports local stdio MCP servers works — point it at the
 Once connected, try these — coordinates are real spots on the showcase world
 (the same places in Hīkoi's Tab menu):
 
-- **Life at the spawn:** *"What grows at -2, -138, and tell me one plant's
-  life story?"* → `grows` + `specimen`. (A lowland emergent rainforest — the
-  tallest trees on the world.)
-- **Causal climate:** *"Why is -2, -138 a rainforest? Walk it back to the
+- **Life at the spawn:** *"What grows at -0.41, 38.07, and tell me one plant's
+  life story?"* → `grows` + `specimen`. (A dense mixed-canopy forest on rugged
+  sandstone mountains.)
+- **Causal climate:** *"Why is -0.41, 38.07 a forest? Walk it back to the
   cause."* → `why` — the world traces it to the equatorial convergence.
-- **First-person scene:** *"Stand at 42, 18 — what would I see, hear, and
-  feel?"* → `walk` + `observe` + `listen`. (A cool temperate forest in a basin
-  below sea level.)
-- **Follow the water:** *"Trace the drainage from -2, -138 down to the sea."*
-  → `trace` — source-to-sea narrative.
+- **First-person scene:** *"Stand at -21, -120.4 — what would I see, hear, and
+  feel?"* → `walk` + `observe` + `listen`. (Shrub-covered ranges deep below
+  sea level, warm and gale-scoured.)
+- **Follow the water:** *"Trace the drainage from -0.41, 38.07 down to the
+  sea."* → `trace` — source-to-sea narrative.
 - **The world's oddities:** *"Show me the strangest places on this world,
   then explain one."* → `surprises`, then interrogate a pick.
-- **Prospecting (an agentic example):** *"Is there anywhere near 0, -136 where
-  a mine would make geological sense? Justify it from the rocks."* → the AI
-  reads `tectonics`, sweeps with `survey`, and confirms with `minerals` — here
-  it finds a laterite bauxite-nickel deposit under the deep tropical
-  weathering. A nice demo of multi-step reasoning, though the showcase is
-  about the world, not the ore.
+- **Prospecting (an agentic example):** *"Is there anywhere within a few
+  hundred km of the spawn where a mine would make geological sense? Justify it
+  from the rocks."* → the AI reads `tectonics`, sweeps with `survey`, and
+  confirms candidates with `minerals` / `pluton` — a nice demo of multi-step
+  reasoning, and the world is honest enough to come up dry where the geology
+  says so. The showcase is about the world, not the ore.
 
 Right-click any feature in Hīkoi to copy its coordinates, then paste them into
 questions of your own.
