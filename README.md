@@ -26,7 +26,14 @@ MCP.
 ![The interrogation panel — six tabs answered from the world itself; here Why explains the floodplain's tectonic history](docs/media/interrogate-why.png)
 
 The scene builds as you arrive: the terrain draws first, then the trees fade
-in a second or two later. That's normal — assets stream in the background.
+in behind it. Flora load times are still being worked on — dense growth can
+take a little while to fill in, so please be patient while we streamline
+that. We felt the visual quality was worth a look in the meantime:
+
+[![A slow 15-second pan along a snowy coast at night on the showcase world](docs/media/hikoi-coastal-pan-preview.gif)](docs/media/hikoi-coastal-pan.mp4)
+
+*Night snowfall over a coastal forest at −39.21, 129.07 — click through for
+the [full-quality clip](docs/media/hikoi-coastal-pan.mp4).*
 
 First-run notes (unsigned builds):
 - **Windows:** SmartScreen may warn — *More info → Run anyway*.
