@@ -2,7 +2,15 @@
 
 **Walk a generated world. Then ask it *why*.**
 
-![Rainforest edge on the showcase world — every tree grown in place from the soil, climate, and light at that spot](docs/media/hero-rainforest.png)
+![Rainforest edge in Hīkoi — every tree grown in place from the soil, climate, and light at that spot](docs/media/hero-rainforest.png)
+
+> **Note on the imagery below:** these stills and the video were captured in
+> July 2026 on an *earlier* showcase world. Since `rc12` the shipped world is
+> **rata**, which looks different — most visibly, rata has no vegetated
+> coastline, so the night-coast clip is not a place you can walk to in the
+> current download. The captures still show real, unretouched Hīkoi output and
+> the same generator; they are simply not the planet in the current release.
+> Fresh imagery is being shot.
 
 Kano grows whole planets from a single seed — geology, climate, hydrology,
 weather, life — every place coherent enough to explain why it's there. This
@@ -25,15 +33,16 @@ MCP.
 
 ![The interrogation panel — six tabs answered from the world itself; here Why explains the floodplain's tectonic history](docs/media/interrogate-why.png)
 
-The scene builds as you arrive: the terrain draws first, then the trees fade
-in behind it. Flora load times are still being worked on — dense growth can
-take a little while to fill in, so please be patient while we streamline
-that. We felt the visual quality was worth a look in the meantime:
+The scene builds as you arrive: the terrain draws first, then the vegetation
+fills in behind it. Since `rc8` the bundle ships a pre-baked flora pack, so
+plants appear in under a second at the spawn and at every curated place —
+the long waits for dense growth described in earlier notes are gone.
 
-[![A slow 15-second pan along a snowy coast at night on the showcase world](docs/media/hikoi-coastal-pan-preview.gif)](docs/media/hikoi-coastal-pan.mp4)
+[![A slow 15-second pan along a snowy coast at night, captured on an earlier showcase world](docs/media/hikoi-coastal-pan-preview.gif)](docs/media/hikoi-coastal-pan.mp4)
 
-*Night snowfall over a coastal forest at −39.21, 129.07 — click through for
-the [full-quality clip](docs/media/hikoi-coastal-pan.mp4).*
+*Night snowfall over a coastal forest at −39.21, 129.07 — **on the pre-`rc12`
+world**, not the currently shipped `rata` (which has no vegetated coastline).
+Click through for the [full-quality clip](docs/media/hikoi-coastal-pan.mp4).*
 
 First-run notes (unsigned builds):
 - **Windows:** SmartScreen may warn — *More info → Run anyway*.
