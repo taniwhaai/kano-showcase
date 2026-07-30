@@ -11,6 +11,14 @@
 > current download. The captures still show real, unretouched Hīkoi output and
 > the same generator; they are simply not the planet in the current release.
 > Fresh imagery is being shot.
+>
+> **They were also shot on a high-end GPU.** Vegetation beyond the
+> full-detail band is drawn from pre-rendered impostor tiles whose resolution
+> is picked to fit your card's memory class: integrated graphics get the
+> coarsest tier (256 px), discrete cards 512–1024 px depending on how many
+> species the place holds. So the *far field* is sharper in our captures than
+> it will be on a laptop. What grows, where, and how much of it is identical
+> on every machine — only the distant detail scales.
 
 Kano grows whole planets from a single seed — geology, climate, hydrology,
 weather, life — every place coherent enough to explain why it's there. This
