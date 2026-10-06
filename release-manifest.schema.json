@@ -29,7 +29,7 @@
     },
     "params_hash": {
       "type": "string",
-      "description": "Informational, non-reversible identifier of the generation configuration."
+      "description": "Informational configuration label. The world_id binds the exact distributed bytes."
     },
     "viewer_build": {
       "type": "string",
