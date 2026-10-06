@@ -6,8 +6,9 @@ public issue.
 
 Notes for the security-curious:
 
-- Hīkoi and `kano` are fully offline — no accounts, no telemetry, no network
-  calls.
+- The downloaded world can be explored without an account or network
+  connection. Visiting Copperhollow opens a separate browser connection to
+  the running simulation.
 - `kano` (local MCP) communicates over stdio only; it opens no network ports.
 - Release assets ship with SHA-256 checksums (the `.sha256` file beside each
   download); verify your download against them.

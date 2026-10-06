@@ -22,7 +22,8 @@ These builds aren't code-signed yet, so your OS will caution you:
 
 ## Black screen or crash on load
 
-Almost always a GPU/driver issue. Try updating drivers first. On laptops with
+A failed load or GPU/driver problem can leave a blank screen. Check
+`walk-error.log` and try updating drivers. On laptops with
 switchable graphics, ensure Hīkoi runs on the discrete GPU.
 
 ## Graphics validation
@@ -31,7 +32,7 @@ Release-specific graphics results are recorded with the release. The RC16
 candidate has been captured on NVIDIA RTX 3080 with Vulkan and DX12, and
 Intel integrated graphics with DX12. A
 successful platform build alone does not establish a working GPU backend.
-Tell us your OS, GPU and driver through an [issue](../../issues).
+Tell us your OS, GPU and driver through an [issue](https://github.com/taniwhaai/kano-showcase/issues).
 
 Use recent Vulkan, Metal or DX12 drivers and at least 4 GB of graphics/shared
 memory. Linux requires Vulkan drivers. The indexed terrain path on Metal and
@@ -54,7 +55,7 @@ $env:WGPU_BACKEND="dx12"; .\hikoi.exe
 ```
 
 The first `gpu:` line it prints should then read `Dx12`, and the globe will show
-land. (macOS and Linux are unaffected.)
+land if the problem was specific to the Vulkan backend.
 
 ## Waiting for terrain or vegetation
 
@@ -66,5 +67,5 @@ The guided tour waits for the current scene before counting its stop time.
 
 ## It runs but a feature looks wrong
 
-Please file an [issue](../../issues) with your OS, GPU, driver version, the
+Please file an [issue](https://github.com/taniwhaai/kano-showcase/issues) with your OS, GPU, driver version, the
 coordinates (press I), and a screenshot.
