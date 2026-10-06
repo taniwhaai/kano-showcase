@@ -8,6 +8,8 @@
 | **Shift** (held) | run (~5× walk) |
 | **Space** | jump |
 | **mouse** | look |
+| **F** | fly / land |
+| **E / C** | climb / descend while flying |
 
 ## Interrogating
 
@@ -27,6 +29,15 @@
 | **Tab** | show / hide the Places list |
 | **1**–**8** | jump to a curated place |
 | **?** | random land teleport |
+| **J** | start / end the three-stop guided tour |
+| **N** | next tour stop |
+| **K** | pause / resume the tour |
+
+The tour waits for each scene to settle, then stays for one minute. It
+advances the clock to local daylight. Some Places arrivals start in flight
+with a chosen heading; **F** lands, and **E/C** changes height. The exploration
+panel also provides these controls and a visitor link to
+[the running Copperhollow settlement](https://copperhollow.taniwha.ai).
 
 Launch at a chosen spot with `--focus lat,lon`, or `--visit <bookmark>`.
 
@@ -35,6 +46,10 @@ Launch at a chosen spot with `--focus lat,lon`, or `--visit <bookmark>`.
 | Input | Action |
 |---|---|
 | **.** / **,** | skip the day–night clock forward / back (~1 hour per press) |
+| **P** | pause / resume the clock |
+| **T** | cycle clock speed |
 | **H** | show / hide the scanner HUD — compass, reticle, and the lat/lon of what you're facing (hidden at launch) |
 | **R** | toggle the world grid |
 | **V** | toggle vsync |
+
+Use **Advance to daylight** in the exploration panel when the scene is dark.

@@ -1,0 +1,12 @@
+{
+  "showcase_version": "0.1.0-rc16",
+  "world_id": "sha256:110cd3b1fcb799415a1371e11a7ed425764adc86e5157219eeec60e0e370e121",
+  "world_file": "default.s9z",
+  "s9_version": 2,
+  "params_hash": "kowhai-r6371-s9-w3500",
+  "viewer_build": "v0.1.0-rc16-preview2.r24",
+  "daemon_build": "v0.1.0-rc16-preview2.r24",
+  "spawn": { "lat": -3.14739, "lon": -19.03260 },
+  "showcase_utsc": 0
+}
+

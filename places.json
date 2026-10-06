@@ -1,0 +1,12 @@
+{
+  "world": "Kowhai — an Earth-sized Kano world with 28.37% land",
+  "places": [
+    { "id": "spawn", "name": "The River Meadow", "lat": -3.14739, "lon": -19.03260, "facing_deg": 270, "tilt_deg": -5.7, "alt_m": 0, "hook": "Stand on the dry grassy bank and look west across the river toward the woodland. Press I to ask why water and soil collect here." },
+    { "id": "shore", "name": "The Low Shore", "lat": 34.22923, "lon": 1.99743, "facing_deg": 0, "tilt_deg": -25.8, "alt_m": 50, "hook": "Fly over low coastal ground, following water between sandy banks and scattered plants. Press F to land; E and C change your height." },
+    { "id": "wetforest", "name": "The Rainy Forest", "lat": 54.64816, "lon": -42.66931, "facing_deg": 90, "tilt_deg": -15, "alt_m": 40, "hook": "A cool, rain-rich region with conifers and a grassy understory. Inspect a tree with the right mouse button and compare its recipe with this place's climate." },
+    { "id": "woodland", "name": "The Limestone Woodland", "lat": -8.78716, "lon": -53.60171, "facing_deg": 90, "tilt_deg": -18, "alt_m": 40, "hook": "Warm limestone country with open grass and scattered branching plants. Ask about the rock, soil and life rather than expecting a closed canopy." },
+    { "id": "claywood", "name": "The Clay Woodland", "lat": 7.20405, "lon": -40.24700, "facing_deg": 90, "tilt_deg": -22.9, "alt_m": 75, "hook": "View the warm woodland from above, then descend to inspect it. Compare its clay-rich ground and plant life with the limestone stop." },
+    { "id": "taiga", "name": "The Cool Taiga", "lat": 57.93555, "lon": 179.46404, "facing_deg": 90, "tilt_deg": -18, "alt_m": 100, "hook": "Cool northern forest on sloping ground. The arrival is above the hillside so the view stays clear; descend with C when you find an open patch." },
+    { "id": "mountain", "name": "The Snow Plateau", "lat": 17.14615, "lon": 126.34890, "facing_deg": 90, "tilt_deg": -10.3, "alt_m": 250, "hook": "High, cold terrain with snow and sparse low plants. Ask how elevation changes the climate, then compare it with the river meadow." }
+  ]
+}

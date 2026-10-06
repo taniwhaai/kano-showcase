@@ -12,8 +12,9 @@
 5. The release version you downloaded (from the zip name).
 
 Common fixes first: see [Troubleshooting](docs/troubleshooting.md), including
-the known-good GPU list and the unsigned-binary first-run steps.
+the graphics validation notes and the unsigned-binary first-run steps.
 
-Hīkoi needs a Vulkan / Metal / DX12-class GPU with recent drivers. Very old
+Hīkoi needs a Vulkan / Metal / DX12-class GPU with recent drivers and at least
+4 GB of graphics or shared memory. Very old
 or virtualized GPUs are the most common cause of a black screen or crash on
 startup.

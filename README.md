@@ -1,100 +1,96 @@
 # Kano Showcase
 
-**Walk a generated world. Then ask it *why*.**
+**Walk a generated world. Then ask it why.**
 
-![Rainforest edge in Hīkoi — every tree grown in place from the soil, climate, and light at that spot](docs/media/hero-rainforest.png)
+![Rainy forest on Kowhai, viewed from the curated aerial arrival](docs/media/kowhai-forest.png)
 
-> **Note on the imagery below:** these stills and the video were captured in
-> July 2026 on an *earlier* showcase world. Since `rc12` the shipped world is
-> **rata**, which looks different — most visibly, rata has no vegetated
-> coastline, so the night-coast clip is not a place you can walk to in the
-> current download. The captures still show real, unretouched Hīkoi output and
-> the same generator; they are simply not the planet in the current release.
-> Fresh imagery is being shot.
->
-> **They were also shot on a high-end GPU.** Vegetation beyond the
-> full-detail band is drawn from pre-rendered impostor tiles whose resolution
-> is picked to fit your card's memory class: integrated graphics get the
-> coarsest tier (256 px), discrete cards 512–1024 px depending on how many
-> species the place holds. So the *far field* is sharper in our captures than
-> it will be on a laptop. What grows, where, and how much of it is identical
-> on every machine — only the distant detail scales.
+*RC16 candidate, at local daylight and initial world age. Captured directly
+from Hīkoi with the bundled flora pack on NVIDIA RTX 3080 / Vulkan. Weather
+and lighting change with the clock; distant vegetation uses the portable
+256 px tiles included in the download.*
 
-Kano grows whole planets from a single seed — geology, climate, hydrology,
-weather, life — every place coherent enough to explain why it's there. This
-showcase is one such world, plus **Hīkoi**, a first-person viewer that lets
-you walk it and interrogate it: point at a ridge and the world itself tells
-you the tectonic story that raised it. No account, no network, no AI required
-— and if you *do* bring your own AI, it can query the exact same world over
-MCP.
+Kowhai is an Earth-sized world with **28.37% land**. Explore a river meadow,
+low coastal ground, rainy forest, open woodland, cool taiga and a snow plateau
+in **Hīkoi**, the first-person viewer. Ask the world about its geology,
+climate, soil and life without an account, network connection or AI.
 
-> Downloads are on the **[Releases page](../../releases)** — binaries and the
-> world file are release assets, not repository files.
+Download the self-contained bundle for your platform from
+[Releases](https://github.com/taniwhaai/kano-showcase/releases). Unzip the whole
+folder and run `hikoi`; keep the world, flora pack and documentation together.
+RC16 introduces Kowhai. Earlier releases contain the Rata world and different
+coordinates.
 
-## 60-second start
+## Start exploring
 
-1. Download the zip for your platform from [Releases](../../releases).
-2. Unzip anywhere. Run `hikoi` (double-click). You're standing on the world.
-3. Walk: **WASD** (+**Shift** to run) · look: **mouse** · interrogate what
-   you're facing: **I** · a tree's generative recipe: **RMB** · globe travel:
-   **G** · curated places: **1–8**.
+1. **WASD** moves, **mouse** looks, and **Shift** moves faster.
+2. **I** asks about the landscape; **right mouse** inspects a plant's recipe.
+3. Click **Explore the world**, or press **J**, for a three-stop tour. **N**
+   skips ahead; **K** pauses/resumes; **J** ends it. Each stop waits for its
+   scene to load, then stays for a minute. The tour advances the clock to
+   local daylight.
+4. **F** flies or lands. **E/C** climbs or descends while flying. Some curated
+   places begin above the ground so you can see the landscape immediately.
+5. **Tab** opens Places; **1–7** travels to a stop. **G** opens the globe.
+   **Esc** frees the pointer, closes a panel, then quits.
 
-![The interrogation panel — six tabs answered from the world itself; here Why explains the floodplain's tectonic history](docs/media/interrogate-why.png)
+Terrain and vegetation build as you arrive. The included flora pack saves
+repeated vegetation work at the curated stops; the wait still depends on
+your machine. A missing or rejected pack falls back to live generation.
 
-The scene builds as you arrive: the terrain draws first, then the vegetation
-fills in behind it. Since `rc8` the bundle ships a pre-baked flora pack, so
-plants appear in under a second at the spawn and at every curated place —
-the long waits for dense growth described in earlier notes are gone.
+![The River Meadow, Kowhai's new spawn, looking west across the water](docs/media/kowhai-river.png)
 
-[![A slow 15-second pan along a snowy coast at night, captured on an earlier showcase world](docs/media/hikoi-coastal-pan-preview.gif)](docs/media/hikoi-coastal-pan.mp4)
+See [Places](PLACES.md) for all seven stops and their coordinates.
 
-*Night snowfall over a coastal forest at −39.21, 129.07 — **on the pre-`rc12`
-world**, not the currently shipped `rata` (which has no vegetated coastline).
-Click through for the [full-quality clip](docs/media/hikoi-coastal-pan.mp4).*
+## Visit a running world
 
-First-run notes (unsigned builds):
-- **Windows:** SmartScreen may warn — *More info → Run anyway*.
-- **macOS:** right-click → *Open* (or `xattr -d com.apple.quarantine hikoi`).
-- **Linux:** `chmod +x hikoi` if needed. Requires Vulkan-capable drivers.
+The viewer's **Visit Copperhollow** link opens
+[the running settlement](https://copperhollow.taniwha.ai) in your browser.
+Look around and inspect the settlement through its visitor view. It is a
+separate simulation from the offline Kowhai download; this release does not
+replace or redeploy it. The visitor experience requires a network connection.
 
-## Ask the world questions — with your own AI
+## Bring your own AI
 
-The bundle includes `kano`, a local MCP server over the same world file. Two
-minutes of setup connects Claude (or any MCP client) to the world you're
-walking: see **[CONNECT-YOUR-AI.md](docs/connect-your-ai.md)**.
+The bundle includes `kano`, a local MCP server over the same saved world.
+Follow [Connect your AI](docs/connect-your-ai.md), then ask:
 
-Then ask things like:
+- “What grows at -3.14739, -19.03260, and why?”
+- “Explain this region from geology through water, soil and life.”
+- “Find somewhere nearby where a mine would make geological sense.”
 
-- *"Explain this valley — from tectonics through hydrology to vegetation."*
-- *"Prospect: find somewhere within 100 km where a mine would make geological
-  sense, and justify it."*
-- *"What grows here? Tell me one plant's life story."*
-- *"Show me the strangest places on this world."*
+These answers come from the world's fields. Broad location queries describe
+regional conditions; local terrain and shorelines are finer than a regional
+elevation reading. Use the viewer to inspect the exact walking surface.
 
-The answers aren't generated commentary about a screenshot — the viewer and
-the AI read the **same deterministic world**, so what you see and what it
-says always agree.
+## Requirements
 
-## What this is (and isn't)
+A Vulkan, Metal or DX12-class GPU with current drivers and at least **4 GB
+of graphics or shared memory**. Linux requires Vulkan drivers. The indexed
+terrain path used by Metal and DX12 now draws from the same dense ground
+field as Vulkan, with detail reducing away from the card centre. Lighting,
+water and distant detail can vary by backend. The included distant vegetation
+tiles use a portable 256 px resolution.
 
-- One fixed, pre-generated world. The **generator is not included** — this
-  showcase interrogates a world; it does not create them.
-- Not Earth. Coordinates are lat/lon on this planet, not ours.
-- Deterministic: the same file yields the same world, everywhere, forever.
+The builds are unsigned:
 
-## Documentation
+- **Windows:** SmartScreen may warn; choose *More info → Run anyway*.
+- **macOS:** right-click → *Open*. If needed, remove quarantine from both
+  programs with `xattr -d com.apple.quarantine hikoi kano`.
+- **Linux:** use `chmod +x hikoi kano` if needed.
+
+## About the download
+
+This is one fixed, pre-generated world. It has Earth-like land and water
+proportions, but its coordinates belong to Kowhai. The generator and audio
+are not included.
 
 - [Controls](docs/controls.md)
 - [Interrogating the world](docs/interrogating-the-world.md)
-- [Connect your AI (MCP setup)](docs/connect-your-ai.md)
-- [Troubleshooting + known-good GPUs](docs/troubleshooting.md)
+- [Connect your AI](docs/connect-your-ai.md)
+- [Troubleshooting](docs/troubleshooting.md)
 - [Support](SUPPORT.md) · [Security](SECURITY.md)
 
-## License
+Free to download and use; no redistribution. See [LICENSE.md](LICENSE.md).
+Please point people to this repository's releases.
 
-Free to download and use; no redistribution — see [LICENSE.md](LICENSE.md).
-Point people here rather than re-hosting the files.
-
----
-
-*Kano and Hīkoi are made by [Taniwha AI](https://taniwha.ai).*
+Kano and Hīkoi are made by [Taniwha AI](https://taniwha.ai).

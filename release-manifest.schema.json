@@ -10,7 +10,7 @@
     "showcase_version": {
       "type": "string",
       "description": "Semantic version of this showcase release.",
-      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+      "pattern": "^\\d+\\.\\d+\\.\\d+(?:-[0-9A-Za-z.-]+)?$"
     },
     "world_id": {
       "type": "string",
@@ -51,7 +51,8 @@
     },
     "showcase_utsc": {
       "type": "integer",
-      "description": "Pinned world-clock tick for the showcase (freezes weather, light, and season so every viewer and screenshot agrees).",
+      "description": "Initial world-clock reference tick. Interactive playback, daylight controls and guided tours advance the observer clock; this does not freeze every screenshot.",
+      "minimum": 0,
       "default": 0
     }
   }
