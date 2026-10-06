@@ -35,7 +35,8 @@ successful platform build alone does not establish a working GPU backend.
 Tell us your OS, GPU and driver through an [issue](https://github.com/taniwhaai/kano-showcase/issues).
 
 Use recent Vulkan, Metal or DX12 drivers and at least 4 GB of graphics/shared
-memory. Linux requires Vulkan drivers. The indexed terrain path on Metal and
+memory. Linux requires Vulkan drivers and an Ubuntu 22.04 (glibc 2.35) or
+newer compatible runtime. The indexed terrain path on Metal and
 DX12 uses the same dense ground field as the Vulkan terrain path, with detail
 reducing away from the card centre.
 

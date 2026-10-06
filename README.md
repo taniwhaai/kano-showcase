@@ -68,7 +68,8 @@ A Vulkan, Metal or DX12-class GPU with current drivers and at least **4 GB
 of graphics or shared memory**; **8 GB system RAM is recommended**. A Windows
 RTX 3080 / Vulkan capture of the rainy forest at 1280×720 peaked at 2.75 GiB
 of viewer working memory, before allowing room for the OS and graphics
-allocations. Linux requires Vulkan drivers. The indexed
+allocations. Linux builds target Ubuntu 22.04 (glibc 2.35) or a newer
+compatible runtime, with Vulkan drivers. The indexed
 terrain path used by Metal and DX12 now draws from the same dense ground
 field as Vulkan, with detail reducing away from the card centre. Lighting,
 water and distant detail can vary by backend. The included distant vegetation

@@ -17,6 +17,7 @@ the graphics validation notes and the unsigned-binary first-run steps.
 Hīkoi needs a Vulkan / Metal / DX12-class GPU with recent drivers and at least
 4 GB of graphics or shared memory; 8 GB system RAM is recommended. A Windows
 RTX 3080 / Vulkan rainy-forest capture at 1280×720 used a peak 2.75 GiB viewer
-working set; leave additional room for the OS and graphics allocations. Very old
+working set; leave additional room for the OS and graphics allocations. Linux
+builds target Ubuntu 22.04 (glibc 2.35) or a newer compatible runtime. Very old
 or virtualized GPUs are the most common cause of a black screen or crash on
 startup.
