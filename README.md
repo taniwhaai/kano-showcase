@@ -4,7 +4,7 @@
 
 ![Rainy forest on Kowhai, viewed from the curated aerial arrival](docs/media/kowhai-forest.png)
 
-*RC16 candidate, at local daylight and initial world age. Captured directly
+*RC16, at local daylight and initial world age. Captured directly
 from Hīkoi with the bundled flora pack on NVIDIA RTX 3080 / Vulkan. Weather
 and lighting change with the clock; distant vegetation uses the portable
 256 px tiles included in the download.*
@@ -31,7 +31,13 @@ coordinates.
 4. **F** flies or lands. **E/C** climbs or descends while flying. Some curated
    places begin above the ground so you can see the landscape immediately.
 5. **Tab** opens Places; **1–7** travels to a stop. **G** opens the globe.
-   **Esc** frees the pointer, closes a panel, then quits.
+   **M** opens the map; **R** toggles the grid. **Esc** closes panels and frees
+   the pointer; **Q** opens quit confirmation.
+
+The **Controls** window opens at startup and can be reopened with **F1** or
+the Controls button. It lists all keys and offers clock-speed controls.
+The default clock is 60×; choose **Real time · 1×** to slow it, or press **T
+twice** from the default after closing Controls. **P** pauses/resumes time.
 
 Terrain and vegetation build as you arrive. The included flora pack saves
 repeated vegetation work at the curated stops; the wait still depends on

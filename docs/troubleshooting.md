@@ -28,9 +28,12 @@ switchable graphics, ensure Hīkoi runs on the discrete GPU.
 
 ## Graphics validation
 
-Release-specific graphics results are recorded with the release. The RC16
-candidate has been captured on NVIDIA RTX 3080 with Vulkan and DX12, and
-Intel integrated graphics with DX12. A
+Release-specific graphics results are recorded with the release. RC16
+has been captured on NVIDIA RTX 3080 with Vulkan and DX12, and
+Intel integrated graphics with DX12. Physical Apple Silicon and Linux/Vulkan
+graphics checks remain outstanding. The virtual Mac CI runner aborts on both
+RC15 and RC16 at its first rendered frame; this does not establish native Mac
+behavior. Linux software Vulkan renders successfully as diagnostic evidence. A
 successful platform build alone does not establish a working GPU backend.
 Tell us your OS, GPU and driver through an [issue](https://github.com/taniwhaai/kano-showcase/issues).
 
