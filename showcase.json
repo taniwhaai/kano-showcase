@@ -4,8 +4,8 @@
   "world_file": "default.s9z",
   "s9_version": 2,
   "params_hash": "kowhai-r6371-s9-w3500",
-  "viewer_build": "v0.1.0-rc16.r29",
-  "daemon_build": "v0.1.0-rc16.r29",
+  "viewer_build": "v0.1.0-rc16.r30",
+  "daemon_build": "v0.1.0-rc16.r30",
   "spawn": { "lat": -3.14739, "lon": -19.03260 },
   "showcase_utsc": 0
 }

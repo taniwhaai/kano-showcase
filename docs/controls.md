@@ -5,6 +5,10 @@ the **Controls** button. It includes direct clock-speed and pause/resume buttons
 Close it with **F1**, **Esc** or **×** to use the keys below, then click the
 landscape to capture the pointer and look around.
 
+![Controls popup with movement and time controls](media/kowhai-controls.png)
+
+*Scroll in the popup for every command, including travel, tour and inspection.*
+
 ## Moving
 
 | Input | Action |
