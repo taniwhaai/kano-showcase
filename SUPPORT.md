@@ -1,6 +1,6 @@
 # Support
 
-**Something not working?** Open an [issue](../../issues) and include:
+**Something not working?** Open an [issue](https://github.com/taniwhaai/kano-showcase/issues) and include:
 
 1. Your OS and version (e.g. Windows 11, macOS 15, Ubuntu 24.04).
 2. Your GPU and driver version.
@@ -12,8 +12,12 @@
 5. The release version you downloaded (from the zip name).
 
 Common fixes first: see [Troubleshooting](docs/troubleshooting.md), including
-the known-good GPU list and the unsigned-binary first-run steps.
+the graphics validation notes and the unsigned-binary first-run steps.
 
-Hīkoi needs a Vulkan / Metal / DX12-class GPU with recent drivers. Very old
+Hīkoi needs a Vulkan / Metal / DX12-class GPU with recent drivers and at least
+4 GB of graphics or shared memory; 8 GB system RAM is recommended. A Windows
+RTX 3080 / Vulkan rainy-forest capture at 1280×720 used a peak 2.75 GiB viewer
+working set; leave additional room for the OS and graphics allocations. Linux
+builds target Ubuntu 22.04 (glibc 2.35) or a newer compatible runtime. Very old
 or virtualized GPUs are the most common cause of a black screen or crash on
 startup.

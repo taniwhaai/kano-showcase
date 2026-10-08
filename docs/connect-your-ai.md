@@ -5,7 +5,7 @@ the exact world you're walking in Hīkoi, over the **Model Context Protocol
 (MCP)**. Everything runs locally — no account, no network.
 
 > You do **not** need this to enjoy the showcase — Hīkoi answers questions
-> about the world on its own (right-click anything). This is for pointing your
+> about the world on its own (press I). This is for pointing your
 > *own* AI at the same world.
 
 ## Claude Desktop
@@ -55,14 +55,16 @@ Any client that supports local stdio MCP servers works — point it at the
 Once connected, try these — coordinates are real spots on the showcase world
 (the same places in Hīkoi's Tab menu):
 
-- **Life at the spawn:** *"What grows at -0.41, 38.07, and tell me one plant's
-  life story?"* → `grows` + `specimen`. (A dense mixed-canopy forest on rugged
-  sandstone mountains.)
-- **Causal climate:** *"Why is -0.41, 38.07 a forest? Walk it back to the
-  cause."* → `why` — the world traces it to the equatorial convergence.
-- **First-person scene:** *"Stand at -21, -120.4 — what would I see, hear, and
-  feel?"* → `walk` + `observe` + `listen`. (Shrub-covered ranges deep below
-  sea level, warm and gale-scoured.)
+- **Life at the spawn:** *"What grows at -3.14739, -19.03260, and tell me one
+  plant's life story?"* → `grows` + `specimen`.
+- **Causal climate:** *"Explain the climate at 54.64816, -42.66931. Why does
+  this place support forest?"* → `why`.
+- **First-person scene:** *"Stand at 17.14615, 126.34890 — what would I see
+  and feel?"* → `walk` + `observe`.
+
+These are Kowhai coordinates from RC16. Previous downloads contain a different
+world. Broad queries describe regional conditions; use the viewer for the
+finer local walking surface.
 - **Follow the water:** *"Trace the drainage from -0.41, 38.07 down to the
   sea."* → `trace` — source-to-sea narrative.
 - **The world's oddities:** *"Show me the strangest places on this world,

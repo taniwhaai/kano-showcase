@@ -22,20 +22,27 @@ These builds aren't code-signed yet, so your OS will caution you:
 
 ## Black screen or crash on load
 
-Almost always a GPU/driver issue. Try updating drivers first. On laptops with
+A failed load or GPU/driver problem can leave a blank screen. Check
+`walk-error.log` and try updating drivers. On laptops with
 switchable graphics, ensure Hīkoi runs on the discrete GPU.
 
-## Known-good GPUs
+## Graphics validation
 
-Confirmed working (this list grows as we test — tell us yours via an
-[issue](../../issues)):
+Release-specific graphics results are recorded with the release. RC16
+has been captured on NVIDIA RTX 3080 with Vulkan and DX12, and
+Intel integrated graphics with DX12. Physical Apple Silicon and Linux/Vulkan
+graphics checks remain outstanding. An earlier RC16 candidate and RC15 both
+aborted at their first rendered frame on the virtual Mac CI runner; this does
+not establish native Mac behavior. Linux software Vulkan rendered successfully
+as diagnostic evidence. A
+successful platform build alone does not establish a working GPU backend.
+Tell us your OS, GPU and driver through an [issue](https://github.com/taniwhaai/kano-showcase/issues).
 
-| Vendor | Examples | Backend |
-|---|---|---|
-| NVIDIA | GTX 10-series and newer | Vulkan / DX12 |
-| AMD | RX 500-series and newer | Vulkan / DX12 |
-| Apple | M1 and newer | Metal |
-| Intel | Iris Xe / Arc | Vulkan / DX12 |
+Use recent Vulkan, Metal or DX12 drivers and at least 4 GB of graphics/shared
+memory. Linux requires Vulkan drivers and an Ubuntu 22.04 (glibc 2.35) or
+newer compatible runtime. The indexed terrain path on Metal and
+DX12 uses the same dense ground field as the Vulkan terrain path, with detail
+reducing away from the card centre.
 
 ## Globe view (G) shows only water
 
@@ -53,15 +60,17 @@ $env:WGPU_BACKEND="dx12"; .\hikoi.exe
 ```
 
 The first `gpu:` line it prints should then read `Dx12`, and the globe will show
-land. (macOS and Linux are unaffected.)
+land if the problem was specific to the Vulkan backend.
 
-## Trees appear a second or two after the terrain (expected)
+## Waiting for terrain or vegetation
 
-On arrival the terrain draws first, then the vegetation fades in over the next
-1–3 seconds while assets stream in the background. This is normal — nothing is
-broken; give it a moment to settle.
+Terrain and vegetation build as you arrive. Let the scene settle; the wait
+varies by hardware and location. Keep `default.flora` beside the executables
+and world. Its pre-baked assets save repeated vegetation work at curated
+stops; a missing or rejected pack falls back to slower live generation.
+The guided tour waits for the current scene before counting its stop time.
 
 ## It runs but a feature looks wrong
 
-Please file an [issue](../../issues) with your OS, GPU, driver version, the
-coordinates (right-click shows them), and a screenshot.
+Please file an [issue](https://github.com/taniwhaai/kano-showcase/issues) with your OS, GPU, driver version, the
+coordinates (press I), and a screenshot.
