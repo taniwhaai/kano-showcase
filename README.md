@@ -2,12 +2,16 @@
 
 **Walk a generated world. Then ask it why.**
 
-![Rainy forest on Kowhai, viewed from the curated aerial arrival](docs/media/kowhai-forest.png)
+[![Watch From a seed to a world — Kowhai, from its hexadecimal seed through 36 world views to the landscape](docs/media/kano-seed-to-world-poster.jpg)](https://taniwha.ai/kano#world-film)
 
-*RC16, at local daylight and initial world age. Captured directly
-from Hīkoi with the bundled flora pack on NVIDIA RTX 3080 / Vulkan. Weather
-and lighting change with the clock; distant vegetation uses the portable
-256 px tiles included in the download.*
+**[Watch: From a seed to a world · 1:44](https://taniwha.ai/kano#world-film)**
+· [Download the full film · 1080p MP4](https://github.com/taniwhaai/kano-showcase/releases/download/v0.1.0-rc16/kano-seed-to-world-1080p.mp4)
+
+See Kowhai generated from a hexadecimal seed, explore all 36 views of its
+geology, water, atmosphere and life, then descend from orbit into the landscape.
+Recorded directly in Kano's World Builder and Hīkoi; the formation sequence
+is accelerated. The World Builder is demonstrated in the film; the download
+below contains the finished world, viewer and MCP server.
 
 Kowhai is an Earth-sized world with **28.37% land**. Explore a river meadow,
 low coastal ground, rainy forest, open woodland, cool taiga and a snow plateau
@@ -19,6 +23,13 @@ Download the self-contained bundle for your platform from
 folder and run `hikoi`; keep the world, flora pack and documentation together.
 RC16 introduces Kowhai. Earlier releases contain the Rata world and different
 coordinates.
+
+![Rainy forest on Kowhai, viewed from the curated aerial arrival](docs/media/kowhai-forest.png)
+
+*RC16, at local daylight and initial world age. Captured directly
+from Hīkoi with the bundled flora pack on NVIDIA RTX 3080 / Vulkan. Weather
+and lighting change with the clock; distant vegetation uses the portable
+256 px tiles included in the download.*
 
 ## Start exploring
 
